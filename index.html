@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon-bike.svg" type="image/svg+xml"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Move Bike - Pesquisa</title>
+</head>
+<body>
+    <main>
+        <header>
+            <img src="img/logo-movebike-1x.png" alt="logo-movebike"/>
+            <h1>Pesquisa de Opinião</h1>
+        </header>
+
+
+        <section>
+            <form action="" method="get">
+                <!--DADOS PESSOAIS-->
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+
+                    <label for="name">Nome</label>
+                    <input id="name" type="text" name="userName" required>
+                    <br>
+
+                    <label for="userAge">Idade</label>
+                    <input type="number" name="userAge" min="12" max="100" required>
+                    <br>
+
+                    <label for="birthDate">Data de nascimento</label>
+                    <input type="date" name="birthDate">
+                    <br>
+
+                    <label for="userEmail">Email</label>
+                    <input type="email" name="userEmail" required>
+                    <br>
+
+                    <label for="usePhone">Telefone</label>
+                    <input type="tel" name="userPhone" patter="[0-9]{11}" placeholder="DDD+Número">
+                    <br>
+
+                    <label for="userImage">Upload de foto</label>
+                    <input type="file" accept="image/*" name="userImage">
+
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Perfil</legend>
+                <p>Gênero</p>
+
+                <input type="radio" name="userGender" value="Masculino">
+                <label for="userGender">Masculino</label>
+                <br>
+
+                <input type="radio" name="userGender" value="Feminino">
+                <label for="userGender">Feminino </label>
+                <br>
+
+                <input type="radio" name="userGender" value="Prefiro não responder ">
+                <label for="userGender">Prefiro não responder</label>
+                <br>
+
+                <label for="maritalStatus">Estado civil</label>
+                <select name="maritalStatus">
+                    <option value="notInformed">--Selecione--</option>
+                    <option value="Casado">Casado</option>
+                    <option value="Solteiro">Soleiro</option>
+                    <option value="Divorciado">Divorciado</option>
+                    <option value="uniaoEstavel">União Estável</option>
+                </select>
+                <br>
+
+                <label for="userState">Estado:</label>
+                <select name="userState">
+                    <option value="Acre"> Acre </option>
+                    <option value="Alagoas"> Alagoas </option>
+                    <option value="Amapa"> Amapá </option>
+                    <option value="Amazonas"> Amazonas </option>
+                    <option value="Bahia"> Bahia </option>
+                    <option value="Ceara"> Ceará </option>
+                    <option value="DistritoFederal"> Distrito Federal </option>
+                    <option value="EspiritoSanto"> Espirito Santo </option>
+                    <option value="Goias"> Goiás </option>
+                    <option value="Maranhao"> Maranhão </option>
+                    <option value="MatoGrossodoSul"> Mato Grosso do Sul </option>
+                    <option value="MatoGrosso"> Mato Grosso </option>
+                    <option value="MinasGerais"> Minas Gerais </option>
+                    <option value="Para"> Pará </option>
+                    <option value="Paraiba"> Paraíba </option>
+                    <option value="Parana"> Paraná </option>
+                    <option value="Pernambuco"> Pernambuco </option>
+                    <option value="Piaui"> Piauí </option>
+                    <option value="RiodeJaneiro "> Rio de Janeiro </option>
+                    <option value="RioGrandedoNorte "> Rio Grande do Norte </option>
+                    <option value="RioGrandedoSul"> Rio Grande do Sul </option>
+                    <option value="Rondonia"> Rondônia </option>
+                    <option value="Roraima"> Roraima </option>
+                    <option value="SantaCatarina"> Santa Catarina </option>
+                    <option value="SãoPaulo"> São Paulo </option>
+                    <option value="Sergipe"> Sergipe </option>
+                    <option value="Tocantins"> Tocantins </option>
+                </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Hábitos</legend>
+                    <p>Redes Sociais</p>
+                    <input type ="checkbox" name="social" value="Instagram">
+                    <label for="social">Instagram</label>
+                    <br>
+
+                    <input type ="checkbox" name="social" value="Facebook">
+                    <label for="social">Facebook</label>
+                    <br>
+
+                    <input type ="checkbox" name="social" value="X">
+                    <label for="social">X</label>
+                    <br>
+
+                    <input type ="checkbox" name="social" value="LinkedIn">
+                    <label for="social">LinkedIn</label>
+                    <br>
+
+                    <label for="bikes">Tipo de Bike:</label>
+                    <input list="bikesTypes" name="bikes" type="text">
+                    <datalist id="bikesTypes">
+                        <option value="Bike Urbana">
+                        <option value="Bike de Montanha">
+                        <option value="Bike Elétrica">
+                        <option value="Performance Bike">
+                        <option value="Bike de Estrada">
+                    </datalist>
+                    <br>
+
+                    <label for="favoriteColor">Cor Favorita:</label>
+                    <input type="color" name="favoriteColor">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Opinião</legend>
+                    <p>O que você acha da qualidade do nosso serviço?</p>
+                    
+                    <input type="radio" name="userOpinion" value="Ótimo">
+                    <label for="userOpinion">Ótima</label>
+                    <br>
+
+                    <input type="radio" name="userOpinion" value="Bom">
+                    <label for="userOpinion">Boa</label>
+                    <br>
+
+                    <input type="radio" name="userOpinion" value="Regular">
+                    <label for="userOpinion">Regular</label>
+                    <br>
+
+                    <input type="radio" name="userOpinion" value="Ruim">
+                    <label for="userOpinion">Ruim</label>
+                    <br>
+
+                    <p>Deseja sugerir algo?</p>
+                    <textarea name="userComment" placeholder="Digite aqui sua sugestão..."></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Confirmações</legend>
+                    <input type="checkbox" name="userLGPD" id="userLGPDTerm" value="aceito" required>
+                    <label for="userLGPDTerm">Li e concordo com a Política de Privacidade</label>
+                    <br>
+
+                    <input type="checkbox" name="userGetResult" id="userGetResult" value="aceito">
+                    <label for="userGetResult">Quero receber os resultados da pesquisa pelo e-mail.</label>
+                </fieldset>
+
+                <button type="submit" id="submitButton">Enviar</button>
+                <button type="reset" id="resetButton">Limpar</button>
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>
